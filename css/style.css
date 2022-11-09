@@ -1,0 +1,91 @@
+a {
+    text-decoration: none;
+}
+
+.text-block-2 {
+    margin-top: 10px;
+}
+
+h1 {
+    width: 800px;
+    margin: auto 0;
+}
+
+.name-label {
+    color: #b99e56;
+}
+
+#theList {
+    text-align: center;
+    color: #b99e56;
+    font-size: 24px;
+    line-height: 1.35em;
+}
+
+#theList li {
+    cursor: pointer;
+    list-style-type: none;
+}
+
+input[type=text] {
+    background-color: transparent;
+}
+
+input[type=number] {
+    width: 2em;
+    appearance: textfield;
+    -moz-appearance: textfield;
+    border-radius: 50%;
+    border-width: 0px;
+    background-color: transparent;
+    color: #b99e56;
+}
+
+input[type=number]::-webkit-file-upload-button {
+    appearance: none;
+    -webkit-appearance: none;
+    opacity: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+    appearance: none;
+    -webkit-appearance: none;
+    opacity: 0;
+    margin: 0;
+}
+
+input[type=range] {
+    max-width: 100%;
+    background-color: transparent;
+    bottom: 0px;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    height: 5px;
+    margin-top: 5px;
+}
+
+input[type=range]::-moz-range-track {
+    height: 20px;
+    padding: 0px;
+    margin: 0px;
+    background-color: #D0D0D0;
+    border-radius: 20px;
+}
+
+input[type=range]::-moz-range-thumb {
+    height: 20px;
+    width: 20px;
+    background-color: #B95656;
+    border-radius: 50%;
+    border-width: 1.5px; 
+    border-color: #b99e56;
+}
+
+input[type=range]::-moz-range-progress {
+    background-color: #B95656;
+    height: 20px;
+    min-width: 40px;
+    border-radius: 20px 5px 5px 20px;
+
+}

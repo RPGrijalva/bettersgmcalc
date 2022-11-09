@@ -27,6 +27,10 @@ h1 {
     list-style-type: none;
 }
 
+#theList li:hover {
+    color: #B95656;
+}
+
 input[type=text] {
     background-color: transparent;
 }

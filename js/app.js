@@ -154,7 +154,7 @@ function completeList() {
     fullCost += parseFloat(localStorage.getItem(key).replaceAll(",", ""));
   }
 
-  theList.innerHTML = theList.innerHTML + "<li> Cost of everything: " + addCommas(fullCost) + "</li>";
+  theList.innerHTML = theList.innerHTML + "<li id='cost-of-all'> Cost of everything: " + addCommas(fullCost) + "</li>";
   modifyList();
 }
 
@@ -171,7 +171,7 @@ function modifyList() {
           completeList();
         };
       }
-      else { if (confirm ("do you want to delete " + thisKey + "?")) {
+      else { if (confirm ("Do you want to delete " + thisKey + "?")) {
         localStorage.removeItem(thisKey)
         completeList();
       }
@@ -181,6 +181,15 @@ function modifyList() {
 }
 
 completeList();
+let totalCost = document.getElementById('cost-of-all');
+
+totalCost.onmouseover = function(){
+  theList.style = ('color: #b30303;');
+}
+
+totalCost.onmouseleave = function(){
+  theList.style = ('color: #b99e56')
+}
 
 //everything past here is just arrays to help calculate the cost of things. I didn't make it easy to read, cause it would take longer than I care to.
 const moves = [
